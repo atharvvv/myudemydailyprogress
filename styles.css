@@ -1,122 +1,94 @@
-head {
-  font-family: 'Montserrat-Black', sans-serif;
+body {
+  text-align: center;
+  background-color: #283149;
 }
 
 h1 {
-  font-family: 'Montserrat-Black', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 700;
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
 }
 
-h3 {
-  font-family: 'Montserrat-Bold', sans-serif;
-  font-weight: 700;
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
 }
 
-h2 {
-  font-family: 'Montserrat-bold', sans-serif;
+.w {
+  background-image: url("images/tom1.png");
+
+}
+
+.a {
+  background-image: url("images/tom2.png");
+
+
+}
+
+.s {
+  background-image: url("images/tom3.png");
+
+
+}
+
+.d {
+  background-image: url("images/tom4.png");
+
+
+}
+
+.j {
+  background-image: url("images/crash.png");
+
+
+}
+
+.k {
+  background-image: url("images/kick.png");
+
+
+}
+
+.l {
+  background-image: url("images/snare.png");
+
+
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
   font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-p {
-  color: grey;
-}
-
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-.container-fluid {
-  padding: 3% 15%;
-}
-
-/* Navigation */
-.navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light";
-}
-
-/* Download Buttons */
-.download-button {
-  margin-left: 3%;
-}
-
-.down {
-  margin-top: 5%
-}
-
-/* Titl-image */
-.title-image {
-  width: 60%;
-  margin-top: 10%;
-}
-
-.rotated {
-  transform: rotate(25deg);
-  /* Equal to rotateZ(45deg) */
-}
-
-/* features section */
-#features {
-  padding: 7% 15%;
-}
-
-.feature-box {
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
   text-align: center;
-  padding: 5%
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68
-}
-
-#testimonials {
-  padding: 7% 15%;
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff
-}
-
-.testimonial-image
-{
-  width: 10%;
-  border-radius: 100%;
-  margin : 20px;
-}
-
-#press{
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-
-
-
-}
-
-.press-logo{
-  width:10%;
-  margin: 20px 20px 50px;
+  margin: 10px;
+  background-color: white;
 }
