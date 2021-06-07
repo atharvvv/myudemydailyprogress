@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>array loops in js </h1>
+    <script>
+      //declaring variables
+      var names = ["Atharva" , "Janvi" , "Aditi" , "Mitesh" , "Ayush " , "Ishs " , "Ishaan" , "Ashish" , "Aarush" , "Aanaya"];
+
+      //forEach
+
+      names.forEach(function(value , index , fullArray){
+      console.log(index, ":" ,value);
+      console.log(fullArray);
+      console.log(value);
+      console.log(index);
+
+      });
+
+      //map
+
+      names.map(function(value, index, fullArray){
+    //console.log(value);
+      console.log(index);
+      console.log(fullArray);
+
+      });
+
+      var stringManArray = names.map(function (value) {
+          return 'Hi, ' + value;
+      });
+
+      var numbersArray = [1, 200, 54, 98, 654, 320];
+      var operatedArray = numbersArray.map(function (value, index, fullArray) {
+      var result = value * 3;
+      return result;
+      });
+
+      console.log(operatedArray);
+      console.log(numbersArray);
+
+      var marks = [25,45,34,67,89,40,50];
+      var passedMarks = marks.filter(function(value){
+        return value  > 35;
+      });
+
+      console.log(marks);
+      console.log(passedMarks);
+
+      const isAllPassed = marks.every(function (value) {
+          return value > 34
+      });
+
+      console.log(isAllPassed);
+
+      var student = ['ABC', 'BBC', 'CBC', 'DBC', 'CBC', 'CBC'];
+      console.log('indexOf CBC :', student.indexOf('CBC'));
+      console.log('lastIndexOf CBC :', student.lastIndexOf('CBC'));
+
+      // findIndex
+      var scores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const searchedIndex = scores.findIndex(function (value) { // parameters can be 3 -> value, index, fullArray
+          return value > 0;
+      });
+      console.log('searchedIndex :', searchedIndex);
+
+      // find
+      const searchedValue = scores.find(function (value) { // parameters can be 3 -> value, index, fullArray
+          return value > 5;
+      });
+      console.log('searchedValue :', searchedValue);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Array iterations</h1>
+
+    <script>
+
+        var firstArray = ['One', 'Two', 'Three', 'Four', 'Five', 'Six'];
+
+        /*
+        for(let i=0; i < 6; i++) {
+            console.log(i, '=>', firstArray[i]);
+        }
+        */
+
+
+        // forEach
+        firstArray.forEach(function (value, index, fullArray) {
+            // console.log(index, ':', value);
+            // console.log(fullArray);
+        });
+
+        // map
+        firstArray.map(function (a, index, fullArray) {
+            //console.log(a);
+            // console.log(index);
+            // console.log(fullArray);
+        });
+
+        var stringManArray = firstArray.map(function (value) {
+            return 'Hi, ' + value;
+        });
+
+        console.log(stringManArray);
+
+        var numbersArray = [1, 200, 54, 98, 654, 320];
+        var operatedArray = numbersArray.map(function (value, index, fullArray) {
+        var result = value * return result;
+        });
+
+        console.log(numbersArray);
+        console.log(operatedArray);
+
+        // filter
+        var marks = [25, 34, 35, 36, 47, 12, 6, 2, 49];
+        var passedMarks = marks.filter(function (value) {
+            return value > 34
+        });
+        console.log(marks);
+        console.log(passedMarks);
+
+        // every
+        const isAllPassed = marks.every(function (value) {
+            return value > 34
+        });
+        console.log(isAllPassed); // boolean
+
+        const isAllGotGreater0 = marks.every(function (value) {
+            return value > 0
+        });
+        console.log(isAllGotGreater0); // boolean
+
+        // some
+        const isFailed = marks.some(function (value) {
+            return value < 34;
+        });
+        console.log('isFailed', isFailed);
+
+
+        // indexOf & lastIndexOf
+        var student = ['ABC', 'BBC', 'CBC', 'DBC', 'CBC', 'CBC'];
+        console.log('indexOf CBC :', student.indexOf('CBC'));
+        console.log('lastIndexOf CBC :', student.lastIndexOf('CBC'));
+
+        // findIndex
+        var scores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const searchedIndex = scores.findIndex(function (value) { // parameters can be 3 -> value, index, fullArray
+            return value > 0;
+        });
+        console.log('searchedIndex :', searchedIndex);
+
+        // find
+        const searchedValue = scores.find(function (value) { // parameters can be 3 -> value, index, fullArray
+            return value > 5;
+        });
+        console.log('searchedValue :', searchedValue);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script></script>
+
+</head>
+
+<body>
+
+    <h1>Array Methods</h1>
+
+    <h3>toString()</h4>
+    <h4 id="toString"></h4>
+
+    <h3>join</h3>
+        <h4 id="join"></h4>
+
+
+    <script>
+
+        var students = ['One', 'Two', 'Three', 'Four', 'Five'];
+        document.getElementById('toString').innerHTML = students.toString();
+
+        document.getElementById('join').innerHTML = students.join(' - ');
+
+        // students.push('Six'); // adds one element at last of the array
+        // students.pop(); // removes the last element from array
+        // students.shift(); // removes the first element from array
+        // students.unshift('Zero'); // adds one element at first position (0th index)
+
+        // console.log(students[2]);
+
+        // delete students[3];
+
+
+        // .splice -> 1 : at which position(index), 2: no. of elements to be removed, 3: element to be added
+        // students.splice(2, 0, 'Two.5'); // to add element in array at specific index
+
+        students.splice(2, 1); // to remove element from array from specific index
+        
+        console.log(students);
+
+        var first = ['one', 'two', 'three'];
+        var second = ['four', 'five', 'six'];
+        var third = ['seven'];
+
+        var result = first.concat(second, third, ['eight']);
+
+        console.log(result);
+
+        // console.log(result.sort()); // ascending order
+
+        console.log('Reverse :', result.reverse()) // descending order
+
+        var numbersArray = [35, 45, 100, 785, 3, 21];
+        var sortedArray = numbersArray.sort(function (firstNumber, secondNumber){
+            return firstNumber - secondNumber; // ascending
+            // return secondNumber - firstNumber; // descnding
+        });
+
+        console.log(sortedArray);
+
+    </script>
+</body>
+
+</html>
