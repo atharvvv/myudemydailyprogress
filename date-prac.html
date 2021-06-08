@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Date Methods</h1>
+
+    <h3 id="todayDate"></h3>
+
+    <h4>Current TimeStamp</h4>
+    <h3 id="current"></h3>
+
+    <h2 id="change"></h2>
+
+    <script>
+
+      //getMethod
+
+
+     var today = new Date(); //Use new Date() to generate a new Date object containing the current date
+
+
+
+
+
+
+     console.log(today.getFullYear()); // YYYY
+
+     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+
+     console.log(today.getMonth()); // 0 - 11
+
+     console.log("Month labe:" ,months[today.getMonth()] );
+
+     console.log(today.getDate()); //1-31
+
+     const currentTimeStamp  = new Date();
+
+     currentTimeStamp.setFullYear(2002);
+     currentTimeStamp.setMonth(11);
+     currentTimeStamp.setDate(31);
+     // currentTimeStamp.setDate(currentTimeStamp.getDate() + 20);
+
+     currentTimeStamp.setHours(9);
+     currentTimeStamp.setMinutes(35);
+     currentTimeStamp.setSeconds(59);
+
+
+     document.getElementById('current').innerHTML = currentTimeStamp;
+
+
+     setTimeout(function(){
+       alert("hello");
+     } , 3000) //execute after 3 section
+
+     setInterval(function(){
+
+         const date1 = new Date();
+         document.getElementById('change').innerHTML = date1;
+          console.log('this will execute every second');
+     }, 1000);
+
+    
+
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Math</h1>
+
+
+    <script>
+
+        // Math
+
+        console.log(Math.PI);
+
+        // methods ->
+        // round, ceil, floor, trunc
+
+        // round - returns rounded nearest integer
+        // ceil - return rounded nearest integer (above)
+        // floor - return rounded nearest integer (downwards)
+
+        // Math.methodName
+
+        console.log(Math.round(15.9)); // 16
+        console.log(Math.round(15.7)); // 16
+        console.log(Math.round(15.4)); // 15
+
+        console.log(Math.ceil(15.9)); // 16
+        console.log(Math.ceil(15.2)); // 16
+
+        console.log(Math.floor(15.9)); // 15
+        console.log(Math.floor(15.2)); // 15
+
+        console.log(Math.trunc(15.9)); // 15
+        console.log(Math.trunc(15.2)); // 15
+
+
+        console.log(Math.abs(-15.9)); // return positive value
+
+
+        console.log(Math.pow(5, 2)); // power of (rest to)
+
+        console.log(Math.sqrt(81)); // square root
+
+
+        console.log(Math.min(120, 54, 87, 1, 2, 65)); // returns minimum value
+        console.log(Math.max(120, 54, 87, 1, 2, 65)); // returns maximum value
+
+        console.log(Math.random()); // return random value between 0 to 1
+
+        /*
+        setInterval(function () {
+            console.log(Math.random()); // return random value between 0 to 1
+        }, 1000);
+        */
+
+        // to return from 0 - 10
+        console.log('0-10', Math.random() * 11);
+
+        // to return from 0 - 9
+        console.log('0-9', Math.random() * 10);
+
+        // to return from 0 - 99
+        console.log('0-99', Math.random() * 100);
+
+        // to return from 0 - 100
+        console.log('0-100', Math.random() * 101);
+
+
+
+        // to return from 1 - 10
+        console.log('1-10', (Math.random() * 11) + 1);
+
+        // to return from 1 - 9
+        console.log('1-9', (Math.random() * 10) + 1);
+
+        // to return from 1 - 99
+        console.log('1-99', (Math.random() * 100) + 1);
+
+        // to return from 1 - 100
+        console.log('1-100', (Math.random() * 101) + 1);
+
+
+    </script>
+
+</body>
+</html>
