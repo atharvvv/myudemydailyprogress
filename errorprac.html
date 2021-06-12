@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <h1>Error</h1>
+
+    <script>
+
+        /*
+        try, catch, throw, finally
+
+        try -> it tests the block of code for error
+        catch -> it handles the error (when try indentifies an error)
+        throw -> it creates custom errors
+        finally -> it will always execute (even if error occured or not)
+
+        */
+
+        /*
+        syntax
+        try {
+            // block of code to be tested
+        }
+        catch(err) {
+
+        // }
+//         */
+
+
+        try {
+            console.log('TRY START');
+            addNumber();
+            console.log('TRY END');
+        }
+        catch (err) {
+            console.log('CATCH START');
+            console.log('ERROR :', err);
+            console.log('CATCH END');
+        }
+
+        console.log('==========================');
+
+        var x = 0;
+        try {
+            if (x == 0) {
+                throw "0 is not allowed";
+            }
+            console.log(10 / x);
+        } catch (error) {
+            console.log('ERROR :', error);
+        }
+
+        console.log('==========================');
+
+        try {
+            console.log('TRY START');
+            addTwoNumber();
+            // var ;
+            console.log('TRY END');
+        } catch(error) {
+            // error = {name: '', message: ''};
+            console.log('CATCH START');
+            console.log('ERROR OCCURED');
+            // name & message
+            console.log('ERROR MESSAGE :', error.message);
+            console.log('ERROR NAME :', error.name);
+            console.log('CATCH END');
+        } finally {
+            console.log('FINALLY START');
+            console.log('FINALLY END');
+        }
+        console.log('SCRIPT END');
+
+    </script>
+
+</body>
+
+</html>
